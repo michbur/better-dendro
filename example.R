@@ -1,6 +1,8 @@
 library(ggplot2)
 
-strain_dendrogram_data <- dendrogram_data(dendro)
+source("./dendrogram_data.R")
+
+#strain_dendrogram_data <- dendrogram_data(dendro)
 hc <- hclust(dist(USArrests), "ave")
 hcdata <- dendrogram_data(hc)
 
